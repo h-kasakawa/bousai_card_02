@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.bousai"
+        version   = "1.0.0">
+
+    <name>防災カード</name>
+
+    <description>
+        防災カードアプリのテストです。
+    </description>
+
+    <author href="http://phonegap.com" email="support@phonegap.com">
+        PhoneGap Team
+    </author>
+
+    <!-- Define the main entry-point to the application -->
+    <content src="index.html" />
+
+    <!-- Define app icon and splashscreen for each platform. -->
+    <platform name="android">
+        <icon   src="res/icon/favicon-16x16.png"		density="ldpi" />
+        <icon   src="res/icon/favicon-16x16.png"		density="mdpi" />
+        <icon   src="res/icon/favicon-32x32.png"		density="hdpi" />
+        <icon   src="res/icon/favicon-32x32.png"		density="xhdpi" />
+        <icon   src="res/icon/favicon-32x32.png"		density="xxhdpi" />
+        <icon   src="res/icon/favicon-32x32.png"		density="xxxhdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="land-ldpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="land-mdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="land-hdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="land-xhdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="land-xxhdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="land-xxxhdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="port-ldpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="port-mdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="port-hdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="port-xhdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="port-xxhdpi" />
+        <splash src="res/icon/favicon-150x150.png"		density="port-xxxhdpi" />
+    </platform>
+
+    <platform name="ios">
+        <icon   src="res/icon/favicon-16x16.png"		platform="ios" width="16"   height="16" />
+        <icon   src="res/icon/favicon-32x32.png"		platform="ios" width="32"   height="32" />
+        <splash src="res/icon/favicon-150x150.png"		platform="ios" width="150"  height="150" />
+    </platform>
+
+    <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
+    <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+</widget>
