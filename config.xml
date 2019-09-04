@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.bousai"
-        version   = "1.0.1">
+        version   = "1.0.2">
 
     <name>防災カード</name>
 
@@ -63,5 +63,10 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+    
+    <access origin="http://*" launch-external="yes" />
+	<access origin="https://*" launch-external="yes" />
+	<access origin="tel:*" launch-external="yes" />
+	<access origin="mailto:*" launch-external="yes" />
 
 </widget>
